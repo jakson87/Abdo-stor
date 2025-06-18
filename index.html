@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>عبدو استور - شحن جواهر فري فاير</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      direction: rtl;
+    }
+
+    body {
+      font-family: 'Tahoma', sans-serif;
+      background: linear-gradient(to bottom, #0f0f0f, #1e1e1e);
+      color: white;
+    }
+
+    header {
+      background: #00cc66;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 10px #00cc66;
+    }
+
+    header h1 {
+      font-size: 30px;
+      color: #fff;
+    }
+
+    .payment-info {
+      background: #111;
+      border: 2px dashed #00cc66;
+      margin: 20px auto;
+      padding: 15px;
+      width: 90%;
+      border-radius: 10px;
+    }
+
+    .payment-info h2 {
+      margin-bottom: 10px;
+      color: #00ffcc;
+    }
+
+    .offers {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .offer {
+      background: #222;
+      border: 1px solid #00cc66;
+      border-radius: 15px;
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 0 15px rgba(0, 255, 150, 0.1);
+    }
+
+    .offer:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(0, 255, 150, 0.3);
+    }
+
+    .offer h2 {
+      font-size: 24px;
+      color: #00ffcc;
+      margin-bottom: 10px;
+    }
+
+    .offer p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    .offer button {
+      background: #00cc66;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .offer button:hover {
+      background: #00994d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #111;
+      color: #888;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>عبدو استور - شحن جواهر فري فاير</h1>
+  </header>
+
+  <div class="payment-info">
+    <h2>💳 طرق الدفع:</h2>
+    <p>📌 بنكك: <strong>9234447</strong> - عائشه جارالنبي نورالدين بخيت</p>
+    <p>📌 ماي كاشي: <strong>400622865</strong> - عبدالله الطيب سليمان</p>
+  </div>
+
+  <section class="offers">
+    <div class="offer">
+      <h2>110 💎</h2>
+      <p>السعر: 2400 ج.س</p>
+      <button onclick="buy('110 💎 - 2400 ج.س')">شراء</button>
+    </div>
+    <div class="offer">
+      <h2>220 💎</h2>
+      <p>السعر: 4800 ج.س</p>
+      <button onclick="buy('220 💎 - 4800 ج.س')">شراء</button>
+    </div>
+    <div class="offer">
+      <h2>572 💎</h2>
+      <p>السعر: 12000 ج.س</p>
+      <button onclick="buy('572 💎 - 12000 ج.س')">شراء</button>
+    </div>
+    <div class="offer">
+      <h2>1188 💎</h2>
+      <p>السعر: 24000 ج.س</p>
+      <button onclick="buy('1188 💎 - 24000 ج.س')">شراء</button>
+    </div>
+    <div class="offer">
+      <h2>عضوية أسبوعية</h2>
+      <p>السعر: 4800 ج.س</p>
+      <button onclick="buy('عضوية أسبوعية - 4800 ج.س')">شراء</button>
+    </div>
+    <div class="offer">
+      <h2>عضوية شهرية</h2>
+      <p>السعر: 17000 ج.س</p>
+      <button onclick="buy('عضوية شهرية - 17000 ج.س')">شراء</button>
+    </div>
+  </section>
+
+  <footer>
+    جميع الحقوق محفوظة © 2025 عبدو استور
+  </footer>
+
+  <script>
+    function buy(item) {
+      const phone = '249117562904'; // بدون +
+      const message = `مرحبًا، أود شراء: ${item}`;
+      const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+
+</body>
+</html>
